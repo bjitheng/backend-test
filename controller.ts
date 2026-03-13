@@ -6,3 +6,11 @@ export const login = (req, res) => {
        res.status(401).send('Invalid credentials');
     }
 };
+
+export const register = (req, res) => {
+    const {email, password} = req.body;
+
+    console.log("email " , email);
+    console.log("password ", password);
+    res.send('Registration successful'); 
+}

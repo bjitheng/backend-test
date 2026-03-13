@@ -1,5 +1,5 @@
 import express from 'express';
-import { login } from './controller';
+import { login, register } from './controller';
 
 const router = express.Router();
 
@@ -8,5 +8,6 @@ router.get('/hsss', (req, res) => {
 });
 
 router.post('/login', login);
+router.post('/register', register)
 
 export default router;
