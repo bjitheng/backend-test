@@ -1,7 +1,7 @@
 export const login = (req, res) => {
     const { email, pwd } = req.body;
     if (email === 'boon@gmail.com' && pwd === '123456') {
-        res.send('Login successful');
+        res.send('Login successfuzzzl');
     } else { 
        res.status(401).send('Invalid credentials');
     }
